@@ -14,16 +14,16 @@ export default function Home() {
   return (
     <>
       <Header />
-      <div className='mt-40'>
+      <div className='mt-10 lg:mt-40'>
         <Banner />
         <WalletIntro />
         <WalletUi />
         <div className='flex justify-center items-center'>
-          <Image src={WalletEnergy} alt="wallet-energy" className='mt-60' />
+          <Image src={WalletEnergy} alt="wallet-energy" className='mt-30 md:mt-60 lg:w-[900px] xl:w-[1200px]' />
         </div>
         <WhyDecane />
         <div className='flex justify-center items-center'>
-          <Image src={DecanePecks} alt="decane-pecks" className='mt-4 w-[1000px] xl:w-[1200px]' />
+          <Image src={DecanePecks} alt="decane-pecks" className='mt-4 w-[900px] xl:w-[1200px]' />
         </div>
         <HowItWorks />
         <WalletBuilder />
