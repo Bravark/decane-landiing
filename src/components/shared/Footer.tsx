@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import Layer from '@/images/layer.png'
 import logo from '@/svgs/logo.svg'
 
@@ -54,13 +55,24 @@ const Footer = () => {
                         © Decane 2025
                     </p>
                     <div className='flex flex-wrap items-center gap-4 sm:gap-6 md:gap-8'>
-                        {['Terms', 'Privacy', 'Security', 'Contact'].map((item) => (
-                            <p
-                                key={item}
-                                className='text-white font-tajawal text-base sm:text-lg md:text-xl font-medium cursor-pointer hover:text-decane-yellow transition-colors'
-                            >
-                                {item}
-                            </p>
+                        {['Terms & Privacy', 'Security', 'Contact'].map((item) => (
+                                item === 'Terms & Privacy' ? (
+                                    <Link
+                                        key={item}
+                                        href="/privacy"
+                                        className='text-white font-tajawal text-base sm:text-lg md:text-xl font-medium cursor-pointer hover:text-decane-yellow transition-colors'
+                                    >
+                                        {item}
+                                    </Link>
+                                ) : (
+                                    <p
+                                        key={item}
+                                        className='text-white font-tajawal text-base sm:text-lg md:text-xl font-medium cursor-pointer hover:text-decane-yellow transition-colors'
+                                    >
+                                        {item}
+                                    </p>
+                                )
+                            
                         ))}
                     </div>
                 </div>
