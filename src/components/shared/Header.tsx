@@ -10,8 +10,8 @@ import close from '@/svgs/close.svg';
 
 const NAV_ITEMS = [
   { name: 'Wallet', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'Resources', href: '#' },
+  // { name: 'Features', href: '#' },
+  // { name: 'Resources', href: '#' },
   { name: 'Community', href: '#' },
 ];
 

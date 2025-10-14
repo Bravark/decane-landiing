@@ -24,7 +24,7 @@ const Footer = () => {
                     </p>
                 </div>
 
-                <div className='backdrop-blur-[16px] w-full lg:w-[500px] xl:w-[700px] px-3 sm:px-4 lg:px-7 py-3 sm:py-4 rounded border border-[#FEFEFE] flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 sm:gap-4'>
+                {/* <div className='backdrop-blur-[16px] w-full lg:w-[500px] xl:w-[700px] px-3 sm:px-4 lg:px-7 py-3 sm:py-4 rounded border border-[#FEFEFE] flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 sm:gap-4'>
                     <input
                         className='w-full bg-transparent text-white text-sm sm:text-base lg:text-lg xl:text-xl focus:border-0 focus:outline-none placeholder:text-xs sm:placeholder:text-sm lg:placeholder:text-base'
                         type="text"
@@ -33,12 +33,12 @@ const Footer = () => {
                     <div className='flex items-center justify-center bg-black py-2 px-4 sm:py-2 sm:px-4 md:py-2.5 md:px-6 lg:py-3 lg:px-8 rounded-xl cursor-pointer whitespace-nowrap'>
                         <p className='font-tajawal font-normal text-white text-xs sm:text-sm'>Sign Up</p>
                     </div>
-                </div>
+                </div> */}
             </div>
 
             <div className='mt-8 sm:mt-12 lg:mt-5 px-2 sm:px-4 md:px-6 lg:px-8 xl:px-14'>
                 <ul className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 lg:flex lg:flex-col gap-3 sm:gap-4'>
-                    {['Wallet', 'Features', 'Builders', 'Learn', 'Community', 'Support'].map((item) => (
+                    {['Wallet', 'Features', 'Community', 'Support'].map((item) => (
                         <li
                             key={item}
                             className='text-white font-tajawal text-xs sm:text-sm font-normal cursor-pointer hover:text-decane-yellow transition-colors'
@@ -49,13 +49,13 @@ const Footer = () => {
                 </ul>
             </div>
 
-            <div className='mt-8 sm:mt-12 lg:mt-16 mb-6 sm:mb-8 md:mb-10 lg:mb-12 px-2 sm:px-4 md:px-6 lg:px-8 xl:px-14 lg:absolute lg:bottom-0 lg:right-0'>
+            <div className='mt-30 sm:mt-22 lg:mt-16 mb-6 sm:mb-8 md:mb-10 lg:mb-12 px-2 sm:px-4 md:px-6 lg:px-8 xl:px-14 lg:absolute lg:bottom-0 lg:right-0'>
                 <div className='flex flex-col md:flex-row items-start md:items-center justify-between gap-4 md:gap-8 lg:gap-40'>
                     <p className='text-white font-tajawal text-base sm:text-lg md:text-xl font-medium'>
                         © Decane 2025
                     </p>
                     <div className='flex flex-wrap items-center gap-4 sm:gap-6 md:gap-8'>
-                        {['Terms & Privacy', 'Security', 'Contact'].map((item) => (
+                        {['Terms & Privacy', 'Contact'].map((item) => (
                                 item === 'Terms & Privacy' ? (
                                     <Link
                                         key={item}
