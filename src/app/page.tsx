@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <div className='mt-10 lg:mt-40'>
+      <div className='mt-5 lg:mt-5'>
         <Banner />
         <WalletIntro />
         <WalletUi />

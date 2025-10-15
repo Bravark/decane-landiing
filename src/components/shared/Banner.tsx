@@ -10,14 +10,12 @@ import Link from 'next/link'
 const Banner = () => {
     return (
         <div className='flex flex-col items-center justify-center'>
-            <h1 className='font-russo-one text-black text-6xl lg:text-8xl max-w-[20rem] lg:max-w-[30rem] text-center'>
+            <h1 className='font-russo-one text-black text-6xl lg:text-8xl text-center lg:mb-10 mb-5 md:mb-0'>
                 Own <span className='text-[#D5B300] font-rouge-script text-[116.1px]'>your
                 </span> Flow</h1>
 
             <div className='relative'>
                 <Image src={Decane} alt="penguin" className='-mt-20 lg:-mt-[15rem]' />
-                <Image src={RightHand} alt="left-hand" className='absolute -bottom-4 left-[36%]  max-[770px]:w-[90px]' />
-                <Image src={LeftHand} alt="right-hand" className='absolute -bottom-4 right-[36%]  max-[770px]:w-[90px]' />
             </div>
 
 
