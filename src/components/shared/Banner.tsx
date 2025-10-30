@@ -1,8 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
 import Decane from '@/images/decane-peg.png'
-import LeftHand from '@/images/left-hand.png'
-import RightHand from '@/images/right-hand.png'
 import download from '@/images/download.gif';
 import Link from 'next/link'
 
