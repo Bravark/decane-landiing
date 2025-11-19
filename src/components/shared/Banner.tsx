@@ -7,13 +7,13 @@ import DecaneRad from '@/svgs/radiation.svg';
 const Banner = () => {
     return (
         <div className='relative'>
-            <div className='z-50 absolute  xl:bottom-[-400px] md:left-[7%] lg:left-[20%] xl:left-[30%] flex flex-col items-center'>
+            <div className='z-50 absolute left-1/2 -translate-x-1/2 xl:bottom-[-400px] flex flex-col items-center'>
                 <div className="flex items-center gap-2 bg-navlinks-bg rounded-full px-6 py-2 text-white text-[15px]">
                     Welcome to Decane
                 </div>
 
-                <h1 className='max-sm:text-center z-[999px] font-plusJakartaSans text-[#FFFFFF] text-3xl lg:text-4xl xl:text-5xl font-semibold my-7'>Secure Your Crypto Future</h1>
-                <p className='max-sm:text-center font-plusJakartaSans font-normal text-[#FFFFFF] text-[15px]'>The most trusted crypto currency wallet for managing your digital assets with confidence and ease</p>
+                <h1 className='text-center z-[999px] font-plusJakartaSans text-[#FFFFFF] text-3xl lg:text-4xl xl:text-5xl font-semibold my-7'>Secure Your Crypto Future</h1>
+                <p className='text-center font-plusJakartaSans font-normal text-[#FFFFFF] text-[15px]'>The most trusted crypto currency wallet for managing your digital assets with confidence and ease</p>
 
 
                 <div className='border border-[#FFFFFF] rounded-full p-2 flex items-center gap-2 mt-16'>
