@@ -7,9 +7,16 @@ import {
   Tajawal,
   Tac_One,
   Figtree,
+  Plus_Jakarta_Sans,
 } from 'next/font/google';
 import './globals.css';
 import OverallLayout from '@/layout';
+
+const plusJakartaSans = Plus_Jakarta_Sans({
+  variable: '--font-plus-jakarta-sans',
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+});
 
 const russoOne = Russo_One({
   variable: '--font-russo-one',
@@ -65,7 +72,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${russoOne.variable} ${rougeScript.variable} ${urbanist.variable} ${viga.variable} ${tajawal.variable} ${tacOne.variable} ${figtree.variable} min-h-screen antialiased`}
+        className={`${plusJakartaSans.variable} ${russoOne.variable} ${rougeScript.variable} ${urbanist.variable} ${viga.variable} ${tajawal.variable} ${tacOne.variable} ${figtree.variable} font-sans min-h-screen antialiased`}
       >
         <OverallLayout>{children}</OverallLayout>
       </body>

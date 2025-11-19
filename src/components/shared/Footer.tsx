@@ -6,7 +6,7 @@ import logo from '@/svgs/logo.svg'
 
 const Footer = () => {
     return (
-        <div className='bg-[linear-gradient(90deg,#0D0D0D_0%,#0D0D0D_55%,#0D0D0D_100%)] z-40 rounded-[40px] min-h-[500px] xl:h-[500px] xl:mx-70 mx-4 md:mx-8 lg:mx-4 relative overflow-hidden mt-10 md:mt-16 lg:mt-20 mb-10 md:mb-10 lg:mb-14 px-4 sm:px-6 md:px-8 lg:px-0 xl:px-0'>
+        <div className='bg-gradient-to-br from-[#000000] via-[#000000]/50 to-transparent z-40 rounded-[40px] min-h-[500px] xl:h-[500px] xl:mx-70 mx-4 md:mx-8 lg:mx-4 relative overflow-hidden mt-10 md:mt-16 lg:mt-20 mb-10 md:mb-10 lg:mb-14 px-4 sm:px-6 md:px-8 lg:px-0 xl:px-0'>
             <div className="flex items-center gap-2 sm:gap-[0.38rem] mt-6 sm:mt-8 md:mt-6 sm:ml-4 md:ml-8 lg:ml-12">
                 <div className='w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 relative'>
                     <Image src={logo} alt="logo" layout='fill' objectFit='contain' />
@@ -24,16 +24,7 @@ const Footer = () => {
                     </p>
                 </div>
 
-                {/* <div className='backdrop-blur-[16px] w-full lg:w-[500px] xl:w-[700px] px-3 sm:px-4 lg:px-7 py-3 sm:py-4 rounded border border-[#FEFEFE] flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 sm:gap-4'>
-                    <input
-                        className='w-full bg-transparent text-white text-sm sm:text-base lg:text-lg xl:text-xl focus:border-0 focus:outline-none placeholder:text-xs sm:placeholder:text-sm lg:placeholder:text-base'
-                        type="text"
-                        placeholder='Sign up for our newsletter and join the growing Decane community.'
-                    />
-                    <div className='flex items-center justify-center bg-black py-2 px-4 sm:py-2 sm:px-4 md:py-2.5 md:px-6 lg:py-3 lg:px-8 rounded-xl cursor-pointer whitespace-nowrap'>
-                        <p className='font-tajawal font-normal text-white text-xs sm:text-sm'>Sign Up</p>
-                    </div>
-                </div> */}
+
             </div>
 
             <div className='mt-8 sm:mt-12 lg:mt-5 px-2 sm:px-4 md:px-6 lg:px-8 xl:px-14'>

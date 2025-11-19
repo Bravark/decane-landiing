@@ -100,7 +100,7 @@ const Header = () => {
               alt={isMenuOpen ? 'Close menu' : 'Open menu'} 
               width={24} 
               height={24} 
-              className="w-6 h-6"
+              className="w-6 h-6 text-white"
             />
           </button>
         </div>
@@ -116,7 +116,7 @@ const Header = () => {
 
       {/* Mobile Menu */}
       <div 
-        className={`fixed top-0 right-0 w-4/5 max-w-sm h-full bg-navbar-bg backdrop-blur-xl z-40 transform transition-transform duration-300 ease-in-out ${
+        className={`fixed top-0 right-0 w-4/5 max-w-sm h-full bg-black z-[100] transform transition-transform duration-300 ease-in-out ${
           isMenuOpen ? 'translate-x-0' : 'translate-x-full'
         } lg:hidden`}
       >
@@ -135,7 +135,7 @@ const Header = () => {
               className="p-2 -mr-2"
               aria-label="Close menu"
             >
-              <Image src={close} alt="" width={24} height={24} />
+              <Image src={close} alt="" width={24} height={24} className="text-white" />
             </button>
           </div>
 

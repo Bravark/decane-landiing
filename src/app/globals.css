@@ -1,9 +1,9 @@
 @import 'tailwindcss';
 
 :root {
-  --background: #fff6c5;
-  --navlinks_bg: #58512c;
-  --navbar_bg: rgba(255, 246, 197, 0.17);
+  --background: #000;
+  --navlinks_bg: #FFFFFF3D;
+  --navbar_bg: transparent;
 }
 
 @theme inline {
@@ -19,6 +19,7 @@
   --font-tajawal: var(--font-tajawal);
   --font-tac-one: var(--font-tac-one);
   --font-figtree: var(--font-figtree);
+  --font-plusJakartaSans: var(--font-plus-jakarta-sans);
 }
 
 body {
