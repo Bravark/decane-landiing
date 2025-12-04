@@ -29,12 +29,19 @@ const Footer = () => {
 
             <div className='mt-8 sm:mt-12 lg:mt-5 px-2 sm:px-4 md:px-6 lg:px-8 xl:px-14'>
                 <ul className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 lg:flex lg:flex-col gap-3 sm:gap-4'>
-                    {['Wallet', 'Features', 'Community', 'Support'].map((item) => (
-                        <li
-                            key={item}
-                            className='text-white font-tajawal text-xs sm:text-sm font-normal cursor-pointer hover:text-decane-yellow transition-colors'
-                        >
-                            {item}
+                    {[
+                        { text: 'Wallet', href: 'https://chromewebstore.google.com/detail/decane-wallet/ogphcpbegajkgjdfdlibiokeafdndbfo' },
+                        { text: 'Features', href: '/' },
+                        { text: 'Community', href: 'https://discord.gg/WBtGdKFdmy' },
+                        { text: 'Support', href: '/' }
+                    ].map(({ text, href }) => (
+                        <li key={text}>
+                            <Link
+                                href={href}
+                                className='text-white font-tajawal text-xs sm:text-sm font-normal cursor-pointer hover:text-decane-yellow transition-colors block'
+                            >
+                                {text}
+                            </Link>
                         </li>
                     ))}
                 </ul>
@@ -56,12 +63,13 @@ const Footer = () => {
                                         {item}
                                     </Link>
                                 ) : (
-                                    <p
+                                    <Link
                                         key={item}
+                                        href="/contact"
                                         className='text-white font-tajawal text-base sm:text-lg md:text-xl font-medium cursor-pointer hover:text-decane-yellow transition-colors'
                                     >
                                         {item}
-                                    </p>
+                                    </Link>
                                 )
                             
                         ))}

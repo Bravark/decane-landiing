@@ -7,7 +7,7 @@ import DecaneRad from '@/svgs/radiation.svg';
 const Banner = () => {
     return (
         <div className='relative'>
-            <div className='z-50 absolute left-1/2 -translate-x-1/2 xl:bottom-[-400px] flex flex-col items-center'>
+            <div className='w-full z-50 absolute left-1/2 -translate-x-1/2 xl:bottom-[-400px] flex flex-col items-center'>
                 <div className="flex items-center gap-2 bg-navlinks-bg rounded-full px-6 py-2 text-white text-[15px]">
                     Welcome to Decane
                 </div>
@@ -16,14 +16,16 @@ const Banner = () => {
                 <p className='text-center font-plusJakartaSans font-normal text-[#FFFFFF] text-[15px]'>The most trusted crypto currency wallet for managing your digital assets with confidence and ease</p>
 
 
-                <div className='border border-[#FFFFFF] rounded-full p-2 flex items-center gap-2 mt-16'>
+                {/* <div className='border border-[#FFFFFF] rounded-full p-2 flex items-center gap-2 mt-16'>
                     <input type="text" placeholder='Enter your email address' className='max-[325px]:w-32 w-[200px] md:w-64 lg:w-96 ml-6 bg-transparent text-white focus:outline-none focus:ring-0 focus:border-transparent' />
                     <button className='bg-[#FFBC05] text-[#000000] font-plusJakartaSans font-semibold text-[15px] rounded-full px-6 py-2'>Subscribe</button>
-                </div>
+                </div> */}
+
+                <div className='flex flex-col md:flex-row gap-4 items-center mt-16'>
+                    <button className='bg-[#FFBC05] text-[#000000] font-plusJakartaSans font-semibold text-[15px] rounded-full px-6 py-2 cursor-pointer'>Download Wallet</button>
 
 
-                <div className="font-plusJakartaSans mt-8 flex items-center gap-2 bg-[#FFBC05] rounded-full px-6 py-2 font-semibold text-[15px] text-black">
-                    Launch Wallet
+                    <button className='bg-[#FFBC05] text-[#000000] font-plusJakartaSans font-semibold text-[15px] rounded-full px-6 py-2 cursor-pointer'>Launch Wallet</button>
                 </div>
             </div>
 

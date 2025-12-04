@@ -12,7 +12,7 @@ const NAV_ITEMS = [
   { name: 'Wallet', href: '#' },
   // { name: 'Features', href: '#' },
   // { name: 'Resources', href: '#' },
-  { name: 'Community', href: '#' },
+  { name: 'Community', href: 'https://discord.gg/WBtGdKFdmy' },
 ];
 
 const Header = () => {
@@ -81,7 +81,7 @@ const Header = () => {
           {/* Desktop CTA Button */}
           <div className="hidden lg:block">
             <Link
-              href="#"
+              href="https://chromewebstore.google.com/detail/decane-wallet/ogphcpbegajkgjdfdlibiokeafdndbfo"
               className="flex items-center gap-2 bg-decane-yellow hover:bg-decane-yellow/90 text-black font-figtree font-medium px-6 py-3 rounded-full transition-colors"
             >
               <span>Download</span>
