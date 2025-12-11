@@ -31,9 +31,9 @@ const Footer = () => {
                 <ul className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 lg:flex lg:flex-col gap-3 sm:gap-4'>
                     {[
                         { text: 'Wallet', href: 'https://chromewebstore.google.com/detail/decane-wallet/ogphcpbegajkgjdfdlibiokeafdndbfo' },
-                        { text: 'Features', href: '/' },
+                        // { text: 'Features', href: '/' },
                         { text: 'Community', href: 'https://discord.gg/WBtGdKFdmy' },
-                        { text: 'Support', href: '/' }
+                        // { text: 'Support', href: '/' }
                     ].map(({ text, href }) => (
                         <li key={text}>
                             <Link

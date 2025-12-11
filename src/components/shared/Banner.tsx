@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import DecaneEclipse from '@/svgs/decane-eclipse.svg';
 import DecaneRad from '@/svgs/radiation.svg';
+import Link from 'next/link';
 
 
 const Banner = () => {
@@ -21,12 +22,12 @@ const Banner = () => {
                     <button className='bg-[#FFBC05] text-[#000000] font-plusJakartaSans font-semibold text-[15px] rounded-full px-6 py-2'>Subscribe</button>
                 </div> */}
 
-                <div className='flex flex-col md:flex-row gap-4 items-center mt-16'>
-                    <button className='bg-[#FFBC05] text-[#000000] font-plusJakartaSans font-semibold text-[15px] rounded-full px-6 py-2 cursor-pointer'>Download Wallet</button>
-
-
-                    <button className='bg-[#FFBC05] text-[#000000] font-plusJakartaSans font-semibold text-[15px] rounded-full px-6 py-2 cursor-pointer'>Launch Wallet</button>
-                </div>
+                <Link href={"https://chromewebstore.google.com/detail/decane-wallet/ogphcpbegajkgjdfdlibiokeafdndbfo"}>
+                    <div className='flex flex-col md:flex-row gap-4 items-center mt-16'>
+                        <button className='bg-[#FFBC05] text-[#000000] font-plusJakartaSans font-semibold text-[15px] rounded-full px-6 py-2 cursor-pointer'
+                        >Download from webstore</button>
+                    </div>
+                </Link>
             </div>
 
             <div className='flex justify-center items-center'>
